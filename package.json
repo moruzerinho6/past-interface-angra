@@ -1,0 +1,37 @@
+{
+  "name": "angra-interface",
+  "version": "1.0.0",
+  "description": "Criador de OSs de SMS Angra",
+  "license": "MIT",
+  "author": "Jorge Luiz Souza Xavier",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron-forge start",
+    "build": "electron-packager . angra-interface --platform=win32 --arch=x64 --out=dist --overwrite --icon=assets/icon.ico --prune=true --asar=true",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.1",
+    "@electron-forge/maker-deb": "^7.8.1",
+    "@electron-forge/maker-rpm": "^7.8.1",
+    "@electron-forge/maker-squirrel": "^7.8.1",
+    "@electron-forge/maker-zip": "^7.8.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.1",
+    "@electron-forge/plugin-fuses": "^7.8.1",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^36.3.1"
+  },
+  "dependencies": {
+    "chrome-finder": "^1.0.7",
+    "date-fns": "^4.1.0",
+    "docxtemplater": "^3.63.2",
+    "dotenv": "^16.5.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "p-limit": "^6.2.0",
+    "pizzip": "^3.2.0",
+    "puppeteer": "^24.9.0"
+  }
+}
